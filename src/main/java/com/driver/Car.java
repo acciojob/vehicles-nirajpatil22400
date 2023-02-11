@@ -18,6 +18,7 @@ public class Car extends Vehicle {
         this.doors = doors;
         this.isManual = isManual;
         this.wheels = wheels;
+        this.seats = seats;
         currentGear = 1;
     }
 
@@ -25,7 +26,7 @@ public class Car extends Vehicle {
     {
         this.currentGear = newGear;
 
-        System.out.println("changeGear method called: Changed to" + " " + + this.currentGear + " " +"gear");
+        System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
     public void changeSpeed(int newSpeed, int newDirection)
